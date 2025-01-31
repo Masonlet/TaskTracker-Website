@@ -12,7 +12,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    color: white;
+    color: black;
     list-style: none;
     text-decoration: none;
     font-family: "Bebas Neue", sans-serif;
@@ -41,32 +41,33 @@ body {
 }
 
 header {
-    margin: 5vh 0;
+    margin: 5vmin 0;
 }
 
 h1 {
-    font-size: 16vmin;
-    line-height: 12vh; 
+    font-size: 12vmin;
+    line-height: 10vmin; 
 }
 
 h2 {
-    font-size: 6vmin;
-    line-height: 8vh;
+    font-size: 4vmin;
+    line-height: 8vmin;
 }
 
 h3 {
     font-size: 3vmin;
-    line-height: 4vh;
+    line-height: 4vmin;
     font-weight: bold;
+    color: rgb(94, 255, 129);
 }
 
 p, li, a    {
-    font-size: 2.5vmin;
-    line-height: 3vh;
+    font-size: 2.75vmin;
+    line-height: 4vmin;
 }
 
 section {
-    margin: 5vh 0;
+    margin: 2.5vmin 0;
 }
 
 picture {
