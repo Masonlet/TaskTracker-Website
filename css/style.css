@@ -1,0 +1,77 @@
+﻿:root {
+    --colour-primary: #5c5c5c;
+    --colour-secondary: #808080;
+    --light-bg: rgba(0, 0, 0, 0.1);
+    --dark-bg: rgba(0, 0, 0, 0.25);
+    --hover-bg: rgba(0, 0, 0, 0.5);
+    --colour-gradient: -145deg, var(--colour-secondary), var(--colour-primary), var(--colour-secondary), var(--colour-primary);
+}
+
+/* Universal Styling */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    text-shadow: 2px 2px var(--colour-primary);
+}
+
+@keyframes gradient {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 0%; }
+}
+
+/* Layout Styling */
+html {
+    background: black;
+}
+body {
+    width: 100vw;
+    height: 100dvh;
+    background: linear-gradient(var(--colour-gradient));
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header {
+    margin: 5vh 0;
+}
+
+h1 {
+    font-size: 16vmin;
+    line-height: 12vh; 
+}
+
+h2 {
+    font-size: 6vmin;
+    line-height: 8vh;
+}
+
+h3 {
+    font-size: 3vmin;
+    line-height: 4vh;
+    font-weight: bold;
+}
+
+p, li, a    {
+    font-size: 2.5vmin;
+    line-height: 3vh;
+}
+
+section {
+    margin: 5vh 0;
+}
+
+picture {
+    width: 60vw;
+    margin: 0 auto;
+    justify-content:space-between;
+    display: flex;
+}
